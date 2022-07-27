@@ -1,0 +1,87 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.sidebar{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    background-color: #F0F2F5;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.sidebar:hover {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+
+/* ===== Reusable code - Here ===== */
+.MenuLinks {
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+.navLink {
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 1px rgb(190, 185, 185);
+    cursor: pointer;
+
+}
+.activeLink{
+    background-color:  #dbe1eb;
+    width: 100%;
+    cursor: pointer;
+}
+.navLink:hover {
+    background-color: #dbe1eb;
+    width: 100%;
+}
+
+/* =========================== */
+.sidebar li {
+    width: 100%;
+}
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+
+}
+
+.home{
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+
+}
+
+.arrowIcon {
+    margin-right: 20px;
+}
